@@ -1,1 +1,5 @@
-Product,Sold,CP,SP,Profit
+Product,QuantitySold,CP,SP,Profit
+Maggie,5,12,15,15
+Chips,15,8,10,30
+Kurkure,29,8,10,58
+Bingo,50,12,19,350

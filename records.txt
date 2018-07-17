@@ -1,19 +1,19 @@
 Product: Maggie
-Quantity Sold: 5
+QuantitySold: 5
 CP: 12
 SP: 15
 
 Product: Chips
-Quantity Sold: 15
+QuantitySold: 15
 CP: 8
 SP: 10
 
 Product: Kurkure
-Quantity Sold: 29
+QuantitySold: 29
 CP: 8
 SP: 10
 
 Product: Bingo
-Quantity Sold: 50
+QuantitySold: 50
 CP: 12
 SP: 19

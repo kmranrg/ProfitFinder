@@ -19,7 +19,7 @@ pro_pat = "Product:\s(\w+)"
 pro = findall(pro_pat,data)
 print(pro)
 
-qty_pat = "Quantity Sold:\s(\d+)"
+qty_pat = "QuantitySold:\s(\d+)"
 qty = findall(qty_pat,data)
 print(qty)
 
@@ -38,10 +38,23 @@ for i in range(len(pro)):
     profit.append(value)
 
 print(profit)
+
 csv_file = open("tables.csv","w",newline = "")
 csv_obj = writer(csv_file)
 csv_obj.writerow(title)
-                
+
+# creating the rows
+
+for i in range(len(pro)):
+    row = []
+    row.append(pro[i])
+    row.append(qty[i])
+    row.append(cp[i])
+    row.append(sp[i])
+    row.append(profit[i])
+    csv_obj.writerow(row)
+    del row
+              
 csv_file.close()
 
 
