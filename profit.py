@@ -19,7 +19,7 @@ pro_pat = "Product:\s(\w+)"
 pro = findall(pro_pat,data)
 print(pro)
 
-qty_pat = "Quantity:\s(\d+)"
+qty_pat = "Quantity Sold:\s(\d+)"
 qty = findall(qty_pat,data)
 print(qty)
 
@@ -31,6 +31,13 @@ sp_pat = "SP:\s(\d+)"
 sp = findall(sp_pat,data)
 print(sp)
 
+# profit calculation
+profit = []
+for i in range(len(pro)):
+    value = (int(sp[i])-int(cp[i]))*int(qty[i])
+    profit.append(value)
+
+print(profit)
 csv_file = open("tables.csv","w",newline = "")
 csv_obj = writer(csv_file)
 csv_obj.writerow(title)
