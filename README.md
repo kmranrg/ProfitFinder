@@ -11,5 +11,4 @@ It calculates the profit by the following formula:
 	cp = cost price
 	qty = quantity
 
-It stores all the details in "tables.csv" file
-It can also shows the total profit
+It stores all the details in "tables.csv" file. It also shows the total profit.
