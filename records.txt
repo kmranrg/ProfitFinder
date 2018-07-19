@@ -17,3 +17,13 @@ Product: Bingo
 QuantitySold: 50
 CP: 12
 SP: 19
+
+Product: Chocolate
+QuantitySold: 12
+CP: 8
+SP: 10
+
+Product: Sprite
+QuantitySold: 10
+CP: 36
+SP: 40
