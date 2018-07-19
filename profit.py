@@ -44,7 +44,7 @@ csv_obj = writer(csv_file)
 csv_obj.writerow(title)
 
 # creating the rows
-
+price = 0
 for i in range(len(pro)):
     row = []
     row.append(pro[i])
@@ -52,9 +52,9 @@ for i in range(len(pro)):
     row.append(cp[i])
     row.append(sp[i])
     row.append(profit[i])
+    price = price + profit[i]
     csv_obj.writerow(row)
-    del row
-              
+    del row              
 csv_file.close()
-
+print("Total Profit:",price)
 
